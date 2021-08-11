@@ -1,3 +1,16 @@
 cool_beasts = {"octopuses":"tentacles", "dolphins":"fins", "rhinos":"horns"}
 for beast, weapon in cool_beasts.items():
     print("{} have {}".format(beast, weapon))
+
+def count_letters(text):
+  result = {}
+  for letter in text:
+    if letter not in result:
+      result[letter] = 0
+    result[letter] += 1
+  return result
+
+  wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
+  for item, color in wardrobe.items():
+  	for i in color:
+  		print("{} {}".format(i, item))
